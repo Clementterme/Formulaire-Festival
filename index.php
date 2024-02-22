@@ -8,7 +8,7 @@ include "./header.php"
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulaire de réservation Music Vercos Festival</title>
-  <link rel="stylesheet" href="./assets/style.css"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <form action="src/traitement.php" id="inscription" method="POST">
@@ -59,7 +59,7 @@ include "./header.php"
 
       <!-- FACULTATIF : ajouter un pass groupe (5 adultes : 150€ / jour) uniquement pass 1 jour -->
 
-      <p class="bouton" onclick="suivant('option')">Suivant</p>
+      <button class="bouton" onclick="suivant()">Suivant</button>
     </fieldset>
     <fieldset id="options">
       <legend>Options</legend>
@@ -99,7 +99,7 @@ include "./header.php"
       <label for="NombreLugesEte">Nombre de descentes en luge d'été :</label>
       <input type="number" name="NombreLugesEte" id="NombreLugesEte">
 
-      <p class="bouton" onclick="suivant('coordonnees')">Suivant</p>
+      <button class="bouton" onclick="suivant2()">Suivant</button>
     </fieldset>
     <fieldset id="coordonnees">
       <legend>Coordonnées</legend>

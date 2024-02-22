@@ -1,3 +1,7 @@
-body{
-    background-color: whitesmoke;
+body {
+  background-color: whitesmoke;
+}
+
+.hidden {
+  display: none;
 }
