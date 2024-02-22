@@ -8,7 +8,7 @@ include "./header.php"
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulaire de réservation Music Vercos Festival</title>
-  <link rel="stylesheet" href="./style.css"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <form action="traitement.php" id="inscription" method="POST">
@@ -50,11 +50,11 @@ include "./header.php"
 
 
       <!-- tarifs réduits : à n'afficher que si tarif réduit est sélectionné -->
-      <input type="checkbox" name="pass1jourreduit" id="pass1jourreduit">
+      <input type="radio" value="pass1jourreduit" name="nbJourReduit" id="pass1jourreduit">
       <label for="pass1jourreduit">Pass 1 jour : 25€</label>
-      <input type="checkbox" name="pass2joursreduit" id="pass2joursreduit">
+      <input type="radio" value="pass2joursreduit" name="nbJourReduit" id="pass2joursreduit">
       <label for="pass2joursreduit">Pass 2 jours : 50€</label>
-      <input type="checkbox" name="pass3joursreduit" id="pass3joursreduit">
+      <input type="radio" value="pass3joursreduit" name="nbJourReduit" id="pass3joursreduit">
       <label for="pass3joursreduit">Pass 3 jours : 65€</label>
 
       <!-- FACULTATIF : ajouter un pass groupe (5 adultes : 150€ / jour) uniquement pass 1 jour -->
@@ -84,8 +84,8 @@ include "./header.php"
       <label for="van3Nuits">Pour les 3 nuits (12€)</label>
 
       <h3>Venez-vous avec des enfants ?</h3>
-      <input type="checkbox" name="enfantsOui"><label for="enfantsOui">Oui</label>
-      <input type="checkbox" name="enfantsNon"><label for="enfantsNon">Non</label>
+      <input type="radio" value="enfantsOui" name="enfants" id="enfantsOui"><label for="enfants">Oui</label>
+      <input type="radio" value="enfantsNon" name="enfants" id="enfantsNon"><label for="enfants">Non</label>
 
       <!-- Si oui, afficher : -->
       <section>
