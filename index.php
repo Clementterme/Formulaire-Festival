@@ -11,7 +11,7 @@ include "./header.php"
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <form action="src/traitement.php" id="inscription" method="POST">
+  <form action="traitement.php" id="inscription" method="POST">
     <fieldset id="reservation">
       <legend>Réservation</legend>
       <h3>Nombre de réservation(s) :</h3>
