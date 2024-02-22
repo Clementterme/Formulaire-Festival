@@ -31,7 +31,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
     $telephone = $_POST["telephone"];
     $adressePostale = $_POST["adressePostale"];
-    // Ajoutez d'autres champs selon votre formulaire
 
     // Créer un tableau avec les données du formulaire
     $donnees = array(
