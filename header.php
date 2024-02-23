@@ -29,6 +29,7 @@ switch ($url) {
   <?php } else {?>
     <link rel="stylesheet" href="assets/form.css">
   <?php } ?>
+  <link rel="stylesheet" href="assets/style.css"/>
   <script src="assets/script.js" defer></script>
 </head>
 <body>
