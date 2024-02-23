@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST["password"];
 
     // Vérifier le mot de passe
-    if ($password === "votre_mot_de_passe_secret") {
+    if ($password === "0000") {
         $_SESSION["loggedin"] = true;
         header("location: admin.php");
         exit;
