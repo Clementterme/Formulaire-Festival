@@ -21,8 +21,14 @@ include "./header.php"
       <label for="tarifReduit">Ma réservation sera en tarif réduit</label>
 
       <h3>Choisissez votre formule :</h3>
+      <section id="passTarifNormal">
       <input type="radio" value="pass1jour" name="nbJour" id="pass1jour">
       <label for="pass1jour">Pass 1 jour : 40€</label>
+      <input type="radio" value="pass2jours" name="nbJour" id="pass2jours">
+      <label for="pass2jours">Pass 2 jours : 70€</label>
+      <input type="radio" value="pass3jours" name="nbJour" id="pass3jours">
+      <label for="pass3jours">Pass 3 jours : 100€</label>
+      </section>
 
       <!-- Si case cochée, afficher le choix du jour -->
       <section id="pass1jourDate">
@@ -34,8 +40,7 @@ include "./header.php"
         <label for="choixJour3">Pass pour la journée du 03/07</label>
       </section>
 
-      <input type="radio" value="pass2jours" name="nbJour" id="pass2jours">
-      <label for="pass2jours">Pass 2 jours : 70€</label>
+      
 
       <!-- Si case cochée, afficher le choix des jours -->
       <section id="pass2joursDate">
@@ -45,17 +50,18 @@ include "./header.php"
         <label for="choixJour23">Pass pour deux journées du 02/07 au 03/07</label>
       </section>
 
-      <input type="radio" value="pass3jours" name="nbJour" id="pass3jours">
-      <label for="pass3jours">Pass 3 jours : 100€</label>
+      
 
 
       <!-- tarifs réduits : à n'afficher que si tarif réduit est sélectionné -->
+      <section id="passTarifReduit">
       <input type="radio" value="pass1jourreduit" name="nbJourReduit" id="pass1jourreduit">
       <label for="pass1jourreduit">Pass 1 jour : 25€</label>
       <input type="radio" value="pass2joursreduit" name="nbJourReduit" id="pass2joursreduit">
       <label for="pass2joursreduit">Pass 2 jours : 50€</label>
       <input type="radio" value="pass3joursreduit" name="nbJourReduit" id="pass3joursreduit">
       <label for="pass3joursreduit">Pass 3 jours : 65€</label>
+      </section>
 
       <!-- FACULTATIF : ajouter un pass groupe (5 adultes : 150€ / jour) uniquement pass 1 jour -->
 

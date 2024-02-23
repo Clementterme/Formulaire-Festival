@@ -5,6 +5,31 @@ options.classList.add("hidden");
 coordonnees.classList.add("hidden");
 
 
+setInterval(function () {
+    
+    let pass1jourDate = document.getElementById("pass1jourDate");
+    pass1jourDate.classList.add("hidden");
+
+    let pass2joursDate = document.getElementById("pass2joursDate");
+    pass2joursDate.classList.add("hidden");
+
+    let passTarifReduit = document.getElementById("passTarifReduit");
+    passTarifReduit.classList.add("hidden");
+
+    let passTarifNormal = document.getElementById("passTarifNormal");
+
+    let tarifReduit = document.getElementById("tarifReduit").checked;
+
+    if (tarifReduit == true) {
+      passTarifNormal.classList.add("hidden");
+      passTarifReduit.classList.remove("hidden");
+    } 
+    if (tarifReduit == false) {
+      passTarifNormal.classList.remove("hidden");
+      passTarifReduit.classList.add("hidden");
+    } 
+  }, 1); 
+
 function suivant() {
   let nombrePlaces = document.getElementById("NombrePlaces").value;
   let jour1 = document.getElementById("choixJour1").checked;
@@ -23,6 +48,12 @@ function suivant() {
 }
 
 function suivant2() {
+  let enfantsOui = document.getElementById("enfantsOui").checked;
+  let enfantsNon = document.getElementById("enfantsNon").checked;
+  if (enfantsOui == false && enfantsNon == false) {
+    alert("Veuillez remplir tous les champs obligatoires");
+  } else {
   options.classList.add("hidden");
   coordonnees.classList.remove("hidden");
+  }
 }
