@@ -20,7 +20,7 @@ switch ($url) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Activité 4 - Formulaire inscription</title>
-  <link rel="stylesheet" href="assets/main.css">
+  <link rel="stylesheet" href="./assets/header.css">
   <?php if ($url == 'tableau-de-bord') { ?>
     <link rel="stylesheet" href="assets/dashboard.css">
   <?php } else if ($url == 'tableau-admin') { ?>
@@ -32,16 +32,19 @@ switch ($url) {
   <link rel="stylesheet" href="assets/style.css"/>
   <script src="assets/script.js" defer></script>
 </head>
-<body>
+<header>
 
   <div id="header">
-    <div class="logo">LOGO.</div>
-    <div>
+    <div class="logo">
+      <img src="./image/vercors_festival_music.png" alt="logo">
+    </div>
+    <div class="connexion">
       <?php if (isset($_SESSION['connecté'])) { ?>
         <a href="deconnexion.php">Déconnexion</a>
       <?php } else { ?>
         <a href="login-admin.php">Connexion Admin</a>
-        <a href="login.php">Connexion</a>
       <?php } ?>
     </div>
   </div>
+ 
+</header>

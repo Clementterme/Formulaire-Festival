@@ -1,0 +1,16 @@
+table{
+    background-color:rgb(211, 210, 210);
+    border: solid 4px black;
+    width:30%;
+}
+.td1{
+    width: 45%;
+    font-style: italic;
+}
+.td2{
+    font-weight: bold;
+}
+td{
+    padding-left: 3%;
+    padding-top: 1.5%;
+}

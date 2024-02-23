@@ -1,0 +1,19 @@
+header{
+    background-color: #57A1A6;
+}
+img{
+    width:50%;
+    height:50%;
+}
+#header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.connexion{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-right: 3%;
+}
+a{
+    text-decoration: none;
+}

@@ -3,28 +3,91 @@
 // Réponse à l'utilisateur
 echo "Merci pour votre réservation !";
 ?>
-
+<link rel="stylesheet" href="./assets/reservation.css"/>
 <h2>Récapitulatif réservation</h2>
-<ul>
-<li>Nom : <?php echo $_GET["nom"]; ?></li>
-<li>Prénom : <?php echo $_GET["prenom"]; ?></li>
-<li>Email : <?php echo $_GET["email"]; ?></li>
-<li>Nombre de places : <?php echo $_GET["nombrePlaces"]; ?></li>
-<li>Tarif réduit : <?php echo $_GET["tarifReduit"]; ?></li>
-<li>Pass réduits : <?php echo $_GET["choixNombreJourReduit"]; ?></li>
-<li>Pass : <?php echo $_GET["choixNombreJour"]; ?></li>
-<li>Jour choisit : <?php echo $_GET["choixPass1jour"]; ?></li>
-<li>Jours choisits : <?php echo $_GET["choixPass2Jours"]; ?></li>
-<li>Tente nuit 1 : <?php echo $_GET["tenteNuit1"]; ?></li>
-<li>Tente nuit 2 : <?php echo $_GET["tenteNuit2"]; ?></li>
-<li>Tente nuit 3 : <?php echo $_GET["tenteNuit3"]; ?></li>
-<li>Tente 3 nuits : <?php echo $_GET["tente3Nuits"]; ?></li>
-<li>Van nuit 1 : <?php echo $_GET["vanNuit1"]; ?></li>
-<li>Van nuit 2 : <?php echo $_GET["vanNuit2"]; ?></li>
-<li>Van nuit 3 : <?php echo $_GET["vanNuit3"]; ?></li>
-<li>Van 3 nuits : <?php echo $_GET["van3Nuits"]; ?></li>
-<li>Enfants : <?php echo $_GET["enfant"]; ?></li>
-<li>Casques enfant : <?php echo $_GET["nombreCasquesEnfants"]; ?></li>
-<li>Luge été : <?php echo $_GET["nombreLugesEte"]; ?></li>
-<li> <?php echo "Total réservation : ".$_GET["prixTotal"]."€"; ?></li>
-</ul>
+<table>
+    <tr>
+        <td class="td1">Nom : </td>
+        <td class="td2"><?php echo $_GET["nom"]; ?></td>
+    </tr>
+    <tr>
+        <td class="td1">Prénom : </td>
+        <td class="td2"><?php echo $_GET["prenom"]; ?></td>
+    </tr>
+    <tr>
+        <td class="td1">Email : </td>
+        <td class="td2"><?php echo $_GET["email"]; ?></td>
+    </tr>
+    <tr>
+        <td class="td1">Nombre de places : </td>
+        <td class="td2"><?php echo $_GET["nombrePlaces"]; ?></td>
+    </tr>
+    <tr>
+        <td class="td1">Tarif réduit : </td>
+        <td class="td2"><?php echo $_GET["tarifReduit"]; ?></td>
+    </tr>
+    <tr>
+        <td class="td1">Pass réduits : </td>
+        <td class="td2"><?php echo $_GET["choixNombreJourReduit"]; ?></td>
+    </tr>
+    <tr>
+        <td class="td1">Pass : </td>
+        <td class="td2"><?php echo $_GET["choixNombreJour"]; ?></td>
+    </tr>
+    <tr>
+        <td class="td1">Jour choisit : </td>
+        <td class="td2"><?php echo $_GET["choixPass1jour"]; ?></td>
+    </tr>
+    <tr>
+        <td class="td1">Jours choisits : </td>
+        <td class="td2"><?php echo $_GET["choixPass2Jours"]; ?></td>
+    </tr>
+    <tr>
+        <td class="td1">Tente nuit 1 : </td>
+        <td class="td2"><?php echo $_GET["tenteNuit1"]; ?></td>
+    </tr>
+    <tr>
+        <td class="td1">Tente nuit 2 : </td>
+        <td class="td2"><?php echo $_GET["tenteNuit2"]; ?></td>
+    </tr>
+    <tr>
+        <td class="td1">Tente nuit 3 : </td>
+        <td class="td2"><?php echo $_GET["tenteNuit3"]; ?></td>
+    </tr>
+    <tr>
+        <td class="td1">Tente 3 nuits : </td>
+        <td class="td2"><?php echo $_GET["tente3Nuits"]; ?></td>
+    </tr>
+    <tr>
+        <td class="td1">Van nuit 1 : </td>
+        <td class="td2"><?php echo $_GET["vanNuit1"]; ?></td>
+    </tr>
+    <tr>
+        <td class="td1">Van nuit 2 : </td>
+        <td class="td2"><?php echo $_GET["vanNuit2"]; ?></td>
+    </tr>
+    <tr>
+        <td class="td1">Van nuit 3 : </td>
+        <td class="td2"><?php echo $_GET["vanNuit3"]; ?></td>
+    </tr>
+    <tr>
+        <td class="td1">Van 3 nuits : </td>
+        <td class="td2"><?php echo $_GET["van3Nuits"]; ?></td>
+    </tr>
+    <tr>
+        <td class="td1">Enfants : </td>
+        <td class="td2"><?php echo $_GET["enfant"]; ?></td>
+    </tr>
+    <tr>
+        <td class="td1">Casques enfant : </td>
+        <td class="td2"><?php echo $_GET["nombreCasquesEnfants"]; ?></td>
+    </tr>
+    <tr>
+        <td class="td1">Luge été : </td>
+        <td class="td2"><?php echo $_GET["nombreLugesEte"]; ?></td>
+    </tr>
+    <tr>
+        <td class="td1">Prix Total : </td>
+        <td class="td2"><?php echo $_GET["prixTotal"]."€"; ?></td>
+    </tr>
+</table>
