@@ -4,10 +4,10 @@ let coordonnees = document.querySelector("#coordonnees");
 options.classList.add("hidden");
 coordonnees.classList.add("hidden");
 
-let NombrePlaces = document.querySelector("#NombrePlaces").value;
 
 function suivant() {
-  if (NombrePlaces === 0) {
+  let NombrePlaces = document.getElementById("NombrePlaces").value;
+  if (NombrePlaces == "0") {
     alert("Veuillez remplir tous les champs obligatoires");
   } else {
     reservation.classList.add("hidden");

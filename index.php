@@ -15,7 +15,7 @@ include "./header.php"
     <fieldset id="reservation">
       <legend>Réservation</legend>
       <h3>Nombre de réservation(s) :</h3>
-      <input type="number" name="nombrePlaces" id="NombrePlaces" required>
+      <input type="number" name="nombrePlaces" id="NombrePlaces" value="0" min="0" required>
       <h3>Réservation(s) en tarif réduit</h3>
       <input type="checkbox" name="tarifReduit" id="tarifReduit">
       <label for="tarifReduit">Ma réservation sera en tarif réduit</label>
@@ -91,13 +91,13 @@ include "./header.php"
       <section>
         <h4>Voulez-vous louer un casque antibruit pour enfants* (2€ / casque) ?</h4>
         <label for="nombreCasquesEnfants">Nombre de casques souhaités :</label>
-        <input type="number" name="nombreCasquesEnfants" id="nombreCasquesEnfants">
+        <input type="number" name="nombreCasquesEnfants" id="nombreCasquesEnfants" value="0" min="0">
         <p>*Dans la limite des stocks disponibles.</p>
       </section>
 
       <h3>Profitez de descentes en luge d'été à tarifs avantageux !</h3>
       <label for="NombreLugesEte">Nombre de descentes en luge d'été :</label>
-      <input type="number" name="NombreLugesEte" id="NombreLugesEte">
+      <input type="number" name="NombreLugesEte" id="NombreLugesEte" value="0" min="0">
 
       <button class="bouton" onclick="suivant2()">Suivant</button>
     </fieldset>
