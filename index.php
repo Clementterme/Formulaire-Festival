@@ -30,6 +30,16 @@ include "./header.php"
       <label for="pass3jours">Pass 3 jours : 100€</label>
       </section>
 
+       <!-- tarifs réduits : à n'afficher que si tarif réduit est sélectionné -->
+       <section id="passTarifReduit">
+      <input type="radio" value="pass1jourreduit" name="nbJourReduit" id="pass1jourreduit">
+      <label for="pass1jourreduit">Pass 1 jour : 25€</label>
+      <input type="radio" value="pass2joursreduit" name="nbJourReduit" id="pass2joursreduit">
+      <label for="pass2joursreduit">Pass 2 jours : 50€</label>
+      <input type="radio" value="pass3joursreduit" name="nbJourReduit" id="pass3joursreduit">
+      <label for="pass3joursreduit">Pass 3 jours : 65€</label>
+      </section>
+
       <!-- Si case cochée, afficher le choix du jour -->
       <section id="pass1jourDate">
         <input type="radio" name="datePass1jour" value="choixJour1" id="choixJour1">
@@ -53,15 +63,7 @@ include "./header.php"
       
 
 
-      <!-- tarifs réduits : à n'afficher que si tarif réduit est sélectionné -->
-      <section id="passTarifReduit">
-      <input type="radio" value="pass1jourreduit" name="nbJourReduit" id="pass1jourreduit">
-      <label for="pass1jourreduit">Pass 1 jour : 25€</label>
-      <input type="radio" value="pass2joursreduit" name="nbJourReduit" id="pass2joursreduit">
-      <label for="pass2joursreduit">Pass 2 jours : 50€</label>
-      <input type="radio" value="pass3joursreduit" name="nbJourReduit" id="pass3joursreduit">
-      <label for="pass3joursreduit">Pass 3 jours : 65€</label>
-      </section>
+     
 
       <!-- FACULTATIF : ajouter un pass groupe (5 adultes : 150€ / jour) uniquement pass 1 jour -->
 

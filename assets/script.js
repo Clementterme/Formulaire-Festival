@@ -20,14 +20,38 @@ setInterval(function () {
 
     let tarifReduit = document.getElementById("tarifReduit").checked;
 
+    let pass1jour = document.getElementById("pass1jour").checked;
+
+    let pass2jours = document.getElementById("pass2jours").checked;
+
+    let pass3jours = document.getElementById("pass3jours").checked;
+
+    let pass1jourreduit = document.getElementById("pass1jourreduit").checked;
+
+    let pass2joursreduit = document.getElementById("pass2joursreduit").checked;
+
+    let pass3joursreduit = document.getElementById("pass3joursreduit").checked;
+
     if (tarifReduit == true) {
       passTarifNormal.classList.add("hidden");
       passTarifReduit.classList.remove("hidden");
+      pass1jour = false;
+      pass2jours = false;
+      pass3jours = false;
     } 
     if (tarifReduit == false) {
       passTarifNormal.classList.remove("hidden");
       passTarifReduit.classList.add("hidden");
+      pass1jourreduit = false;
+      pass2joursreduit = false;
+      pass3joursreduit = false;
     } 
+    if (pass1jour == true || pass1jourreduit == true) {
+      pass1jourDate.classList.remove("hidden");
+    }
+    if (pass2jours == true || pass2joursreduit == true) {
+      pass2joursDate.classList.remove("hidden");
+    }
   }, 1); 
 
 function suivant() {
