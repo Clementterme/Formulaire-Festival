@@ -1,16 +1,17 @@
 <?php
+
 session_start();
 
-// Vérifier si l'utilisateur est connecté
+// Vérification si admin connecté
 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     header("location: login-admin.php");
     exit;
 }
 
-// Afficher la liste des réservations depuis le fichier CSV ou la base de données
+// Affichage liste réservations depuis fichier CSV
 $reservations = array_map('str_getcsv', file('reservations.csv'));
 
-// Afficher les réservations dans un tableau HTML ou d'une autre manière
+// Affichage réservations dans tableau
 ?>
 <!DOCTYPE html>
 <html lang="fr">

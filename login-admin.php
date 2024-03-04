@@ -1,11 +1,12 @@
 <?php
+include "./header.php";
+
 session_start();
 
-// Vérification de l'authentification
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST["password"];
 
-    // Vérifier le mot de passe
+    // Vérification mot de passe
     if ($password === "0000") {
         $_SESSION["loggedin"] = true;
         header("location: admin.php");

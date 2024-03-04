@@ -1,7 +1,8 @@
 <?php
+
 session_start();
 
-// Déconnexion de l'utilisateur
+// Déconnexion
 $_SESSION = array();
 session_destroy();
 
