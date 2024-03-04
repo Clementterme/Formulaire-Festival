@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vercors Music Festival</title>
   <link rel="stylesheet" href="./assets/header.css">
-  <link rel="stylesheet" href="assets/admin.css">
-  <link rel="stylesheet" href="assets/style.css"/>
+  <link rel="stylesheet" href="./assets/admin.css">
+  <link rel="stylesheet" href="./assets/style.css"/>
   <script src="assets/script.js" defer></script>
 </head>
 <header>
@@ -16,11 +16,7 @@
       <img src="./image/vercors_festival_music.png" alt="logo">
     </div>
     <div class="connexion">
-      <?php if (isset($_SESSION['connecté'])) { ?>
-        <a href="deconnexion.php">Déconnexion</a>
-      <?php } else { ?>
         <a href="login-admin.php">Connexion Admin</a>
-      <?php } ?>
     </div>
   </div>
  

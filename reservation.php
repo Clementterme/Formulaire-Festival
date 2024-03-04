@@ -1,5 +1,6 @@
 <div class="first">
 <?php
+include "./header.php";
 
 echo "Merci pour votre réservation !";
 ?>
