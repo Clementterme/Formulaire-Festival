@@ -1,12 +1,11 @@
-<div class="first">
+
 <?php
 include "./header.php";
-
-echo "Merci pour votre réservation !";
 ?>
 
-<div class="reservation">
 <link rel="stylesheet" href="./assets/reservation.css"/>
+<p>Merci pour votre réservation !</p>
+<div class="reservation">
 <h2>Récapitulatif réservation</h2>
 <table>
     <tr>
@@ -94,6 +93,4 @@ echo "Merci pour votre réservation !";
         <td class="td4"><?php echo $_GET["prixTotal"]."€"; ?></td>
     </tr>
 </table>
-</div>
-
 </div>

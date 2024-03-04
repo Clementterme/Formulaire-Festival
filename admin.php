@@ -21,7 +21,7 @@ $reservations = array_map('str_getcsv', file('reservations.csv'));
     <title>Admin - Liste des réservations</title>
     <link rel="stylesheet" href="./assets/admin.css">
 </head>
-<body>
+<main>
     <h1>Liste des réservations</h1>
     <table class="tableau-utilisateurs">
         <thead>
@@ -78,6 +78,6 @@ $reservations = array_map('str_getcsv', file('reservations.csv'));
         </tr>
         <?php endforeach; ?>
     </table>
-    <p><a href="logout.php">Se déconnecter</a></p>
-</body>
+    <p><a class="seDeconnecter" href="logout.php">Se déconnecter</a></p>
+</main>
 </html>

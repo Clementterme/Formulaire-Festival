@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Admin - Connexion</title>
     <link rel="stylesheet" href="./assets/login.css"/>
 </head>
-<body>
+<main>
     <h1>Connexion Admin</h1>
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
         <label for="password">Mot de passe :</label>
@@ -34,5 +34,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <?php if (isset($login_err)): ?>
     <p><?php echo $login_err; ?></p>
     <?php endif; ?>
-</body>
+</main>
 </html>

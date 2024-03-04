@@ -3,7 +3,7 @@ include "./header.php";
 ?>
 
 <body>
-<div>
+<div class="formu">
   <form action="traitement.php" id="inscription" method="POST">
     <fieldset id="reservation">
       <legend>Réservation</legend>

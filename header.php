@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vercors Music Festival</title>
   <link rel="stylesheet" href="./assets/header.css">
-  <link rel="stylesheet" href="./assets/admin.css">
   <link rel="stylesheet" href="./assets/style.css"/>
   <script src="assets/script.js" defer></script>
 </head>
