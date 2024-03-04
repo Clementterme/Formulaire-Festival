@@ -34,8 +34,8 @@ $reservations = array_map('str_getcsv', file('reservations.csv'));
                 <th>Tarif réduit</th>
                 <th>Pass réduits</th>
                 <th>Pass</th>
-                <th>Jour choisit</th>
-                <th>Jours choisits</th>
+                <th>Jour choisi</th>
+                <th>Jours choisis</th>
                 <th>Tente nuit 1</th>
                 <th>Tente nuit 2</th>
                 <th>Tente nuit 3</th>

@@ -1,7 +1,10 @@
+<div class="first">
 <?php
 
 echo "Merci pour votre réservation !";
 ?>
+
+<div class="reservation">
 <link rel="stylesheet" href="./assets/reservation.css"/>
 <h2>Récapitulatif réservation</h2>
 <table>
@@ -34,11 +37,11 @@ echo "Merci pour votre réservation !";
         <td class="td2"><?php echo $_GET["choixNombreJour"]; ?></td>
     </tr>
     <tr>
-        <td class="td1">Jour choisit : </td>
+        <td class="td1">Jour choisi : </td>
         <td class="td2"><?php echo $_GET["choixPass1jour"]; ?></td>
     </tr>
     <tr>
-        <td class="td1">Jours choisits : </td>
+        <td class="td1">Jours choisis : </td>
         <td class="td2"><?php echo $_GET["choixPass2Jours"]; ?></td>
     </tr>
     <tr>
@@ -86,7 +89,10 @@ echo "Merci pour votre réservation !";
         <td class="td2"><?php echo $_GET["nombreLugesEte"]; ?></td>
     </tr>
     <tr>
-        <td class="td1">Prix Total : </td>
-        <td class="td2"><?php echo $_GET["prixTotal"]."€"; ?></td>
+        <td class="td3">Prix Total : </td>
+        <td class="td4"><?php echo $_GET["prixTotal"]."€"; ?></td>
     </tr>
 </table>
+</div>
+
+</div>

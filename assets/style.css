@@ -1,5 +1,27 @@
 body {
-  background-color: whitesmoke;
+  background-image: url(../image/Fond.webp);
+}
+div{
+  display: flex;
+  justify-content: center;
+}
+form{
+  background-color: burlywood;
+  margin-top: 3%;
+  width: 65%;
+}
+.coordonnees label{
+  width: 30%;
+}
+.boutons{
+  display: flex;
+  margin-top: 5%;
+}
+button{
+  justify-content: center;
+}
+.bouton{
+  justify-content: center;
 }
 
 .hidden {

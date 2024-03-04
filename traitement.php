@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $adressePostale = $_POST["adressePostale"];
     $nombrePlaces = $_POST["nombrePlaces"];
 
-    $tarifReduit = isset($_POST["tarifReduit"]) ? "Oui" : "Non"; // Si la case est cochée, renvoie "Oui", sinon "Non"
+    $tarifReduit = isset($_POST["tarifReduit"]) ? "Oui" : "x"; // Si la case est cochée, renvoie "Oui", sinon "Non"
 
     if (isset($_POST['nbJourReduit'])) {
         $nombreJourReduit = $_POST['nbJourReduit'];
@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $prixChoixNombreJourReduit = 65;
         }
     }if (!isset($_POST['nbJourReduit'])) {
-        $choixNombreJourReduit = "null";
+        $choixNombreJourReduit = "x";
         $prixChoixNombreJourReduit = 0;
     }
 
@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $prixChoixNombreJour = 100;
         }
     }if (!isset($_POST['nbJour'])) {
-        $choixNombreJour = "null";
+        $choixNombreJour = "x";
         $prixChoixNombreJour = 0;
     }
 
@@ -59,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $choixPass1jour = "Jour3";
         }
     }if (!isset($_POST['datePass1jour'])) {
-        $choixPass1jour = "null";
+        $choixPass1jour = "x";
     }
 
     
@@ -73,33 +73,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $choixPass2Jours = "Jour23";
         }
     }if (!isset($_POST['datePass2jours'])) {
-        $choixPass2Jours = "null";
+        $choixPass2Jours = "x";
     }
 
 
 
-    $tenteNuit1 = isset($_POST["tenteNuit1"]) ? "Oui" : "Non";
+    $tenteNuit1 = isset($_POST["tenteNuit1"]) ? "Oui" : "x";
     if ($tenteNuit1 == "Oui"){
         $prixTenteNuit1 = 5;
     }else{
         $prixTenteNuit1 = 0;
     }
 
-    $tenteNuit2 = isset($_POST["tenteNuit2"]) ? "Oui" : "Non";
+    $tenteNuit2 = isset($_POST["tenteNuit2"]) ? "Oui" : "x";
     if ($tenteNuit2 == "Oui"){
         $prixTenteNuit2 = 5;
     }else{
         $prixTenteNuit2 = 0;
     }
 
-    $tenteNuit3 = isset($_POST["tenteNuit3"]) ? "Oui" : "Non";
+    $tenteNuit3 = isset($_POST["tenteNuit3"]) ? "Oui" : "x";
     if ($tenteNuit3 == "Oui"){
         $prixTenteNuit3 = 5;
     }else{
         $prixTenteNuit3 = 0;
     }
 
-    $tente3Nuits = isset($_POST["tente3Nuits"]) ? "Oui" : "Non";
+    $tente3Nuits = isset($_POST["tente3Nuits"]) ? "Oui" : "x";
     if ($tente3Nuits == "Oui"){
         $prixTente3Nuits = 12;
     }else{
@@ -108,28 +108,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 
-    $vanNuit1 = isset($_POST["vanNuit1"]) ? "vanNuit1" : "Non";
+    $vanNuit1 = isset($_POST["vanNuit1"]) ? "vanNuit1" : "x";
     if ($vanNuit1 == "Oui"){
         $prixVanNuit1 = 5;
     }else{
         $prixVanNuit1 = 0;
     }
 
-    $vanNuit2 = isset($_POST["vanNuit2"]) ? "vanNuit2" : "Non";
+    $vanNuit2 = isset($_POST["vanNuit2"]) ? "vanNuit2" : "x";
     if ($vanNuit2 == "Oui"){
         $prixVanNuit2 = 5;
     }else{
         $prixVanNuit2 = 0;
     }
 
-    $vanNuit3 = isset($_POST["vanNuit3"]) ? "vanNuit3" : "Non";
+    $vanNuit3 = isset($_POST["vanNuit3"]) ? "vanNuit3" : "x";
     if ($vanNuit3 == "Oui"){
         $prixVanNuit3 = 5;
     }else{
         $prixVanNuit3 = 0;
     }
 
-    $van3Nuits = isset($_POST["van3Nuits"]) ? "van3Nuits" : "Non";
+    $van3Nuits = isset($_POST["van3Nuits"]) ? "van3Nuits" : "x";
     if ($van3Nuits == "Oui"){
         $prixVan3Nuits = 12;
     }else{

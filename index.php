@@ -8,9 +8,10 @@ include "./header.php"
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulaire de réservation Music Vercos Festival</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="./assets/style.css"/>
 </head>
 <body>
+<div>
   <form action="traitement.php" id="inscription" method="POST">
     <fieldset id="reservation">
       <legend>Réservation</legend>
@@ -66,8 +67,9 @@ include "./header.php"
      
 
       <!-- FACULTATIF : ajouter un pass groupe (5 adultes : 150€ / jour) uniquement pass 1 jour -->
-
+    <div class="boutons">
       <button class="bouton" onclick="suivant()">Suivant</button>
+    </div>
     </fieldset>
     <fieldset id="options">
       <legend>Options</legend>
@@ -107,23 +109,43 @@ include "./header.php"
       <label for="NombreLugesEte">Nombre de descentes en luge d'été :</label>
       <input type="number" name="NombreLugesEte" id="NombreLugesEte" value="0" min="0">
 
-      <button class="bouton" onclick="suivant2()">Suivant</button>
+      <br>
+      <div class="boutons">
+        <button class="bouton" onclick="suivant2()">Suivant</button>
+      </div>
     </fieldset>
     <fieldset id="coordonnees">
       <legend>Coordonnées</legend>
+      <div class="coordonnees">
         <label for="nom">Nom :</label>
         <input type="text" name="nom" id="nom" required>
+        <br>
+      </div>
+      <div class="coordonnees">
         <label for="prenom">Prénom :</label>
         <input type="text" name="prenom" id="prenom" required>
+        <br>
+      </div>
+      <div class="coordonnees">
         <label for="email">Email :</label>
         <input type="email" name="email" id="email" required>
+        <br>
+      </div>
+      <div class="coordonnees">
         <label for="telephone">Téléphone :</label>
         <input type="text" name="telephone" id="telephone" required>
+        <br>
+      </div>
+      <div class="coordonnees">
         <label for="adressePostale">Adresse Postale :</label>
         <input type="text" name="adressePostale" id="adressePostale" required>
-
+        <br>
+      </div>
+      <div class="boutons">
         <input type="submit" name="soumission" class="bouton" value="Réserver">
+      </div>
     </fieldset>
   </form>
+</div>
 </body>
 </html>
