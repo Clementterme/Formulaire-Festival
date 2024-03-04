@@ -1,6 +1,5 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Récupération des données du formulaire
     $nom = $_POST["nom"];
     $prenom = $_POST["prenom"];
     $email = $_POST["email"];
@@ -11,10 +10,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $tarifReduit = isset($_POST["tarifReduit"]) ? "Oui" : "Non"; // Si la case est cochée, renvoie "Oui", sinon "Non"
 
     if (isset($_POST['nbJourReduit'])) {
-        // Récupérer la valeur sélectionnée
         $nombreJourReduit = $_POST['nbJourReduit'];
         
-        // Analyser la valeur sélectionnée pour obtenir les informations nécessaires
         if ($nombreJourReduit == "pass1jourreduit") {
             $choixNombreJourReduit = "pass1jourReduit";
             $prixChoixNombreJourReduit = 25;
@@ -33,10 +30,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     if (isset($_POST['nbJour'])) {
-        // Récupérer la valeur sélectionnée
         $nombreJour = $_POST['nbJour'];
         
-        // Analyser la valeur sélectionnée pour obtenir les informations nécessaires
         if ($nombreJour == "pass1jour") {
             $choixNombreJour = "pass1jour";
             $prixChoixNombreJour = 40;
@@ -54,10 +49,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
    
     if (isset($_POST['datePass1jour'])) {
-        // Récupérer la valeur sélectionnée
         $datePass1jour = $_POST['datePass1jour'];
         
-        // Analyser la valeur sélectionnée pour obtenir les informations nécessaires
         if ($datePass1jour == "choixJour1") {
             $choixPass1jour = "Jour1";
         } if ($datePass1jour == "choixJour2") {
@@ -71,10 +64,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     
     if (isset($_POST['datePass2jours'])) {
-        // Récupérer la valeur sélectionnée
         $passSelection = $_POST['datePass2jours'];
         
-        // Analyser la valeur sélectionnée pour obtenir les informations nécessaires
         if ($passSelection == "choixJour12") {
             $choixPass2Jours = "Jour12";
             
@@ -168,8 +159,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     file_put_contents("reservations.csv", $ligne, FILE_APPEND);
     
 } else {
-    // Si la méthode HTTP n'est pas POST, renvoyer une erreur
-    http_response_code(405); // Méthode non autorisée
+    http_response_code(405);
     echo "Méthode non autorisée";
 }
 

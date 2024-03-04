@@ -1,6 +1,5 @@
 <?php
 
-// Réponse à l'utilisateur
 echo "Merci pour votre réservation !";
 ?>
 <link rel="stylesheet" href="./assets/reservation.css"/>
