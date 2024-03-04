@@ -10,7 +10,7 @@ div{
   display: flex;
   justify-content: center;
 }
-form{
+#inscription{
   background-color: burlywood;
   margin-top: 3%;
   width: 65%;
