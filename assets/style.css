@@ -1,31 +1,40 @@
 html {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
+  background-image: url(../image/Fond.jpg);
+}
+.formu {
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  background-image: url(../image/Fond.webp);
+  
 }
-div{
+div {
   display: flex;
   justify-content: center;
 }
-#inscription{
+#reservation,#options,#coordonnees {
+  border-radius: 20px;
   background-color: burlywood;
-  margin-top: 3%;
-  width: 65%;
+  padding: 5% 5%;
 }
-.coordonnees label{
+#inscription {
+  margin-top: 3%;
+  width: 75%;
+}
+.coordonnees label {
   width: 30%;
 }
-.boutons{
+.boutons {
   display: flex;
   margin-top: 5%;
 }
-button{
+button {
   justify-content: center;
 }
-.bouton{
+.bouton {
   justify-content: center;
 }
 
