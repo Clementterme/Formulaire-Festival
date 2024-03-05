@@ -1,10 +1,12 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nom = $_POST["nom"];
-    $prenom = $_POST["prenom"];
-    $email = $_POST["email"];
-    $telephone = $_POST["telephone"];
-    $adressePostale = $_POST["adressePostale"];
+    $nom = htmlspecialchars($_POST["nom"]);
+    $prenom = htmlspecialchars($_POST["prenom"]);
+    if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+        $email = htmlspecialchars($_POST["email"]);
+    }
+    $telephone = htmlspecialchars($_POST["telephone"]);
+    $adressePostale = htmlspecialchars($_POST["adressePostale"]);
     $nombrePlaces = $_POST["nombrePlaces"];
 
     $tarifReduit = isset($_POST["tarifReduit"]) ? "Oui" : "x"; // Si la case est cochée, renvoie "Oui", sinon "Non"
