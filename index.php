@@ -91,7 +91,7 @@ include "./header.php";
 
       <!-- Si oui, afficher : -->
       <section>
-        <h4>Voulez-vous louer un casque antibruit pour enfants* (2€ / casque) ?</h4>
+        <h3>Voulez-vous louer un casque antibruit pour enfants* (2€ / casque) ?</h3>
         <label for="nombreCasquesEnfants">Nombre de casques souhaités :</label>
         <input type="number" name="nombreCasquesEnfants" id="nombreCasquesEnfants" value="0" min="0">
         <p>*Dans la limite des stocks disponibles.</p>

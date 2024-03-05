@@ -15,6 +15,7 @@ $reservations = array_map('str_getcsv', file('reservations.csv'));
 ?>
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,34 +51,35 @@ $reservations = array_map('str_getcsv', file('reservations.csv'));
                 <th>Luge été</th>
             </tr>
         </thead>
-        <?php foreach ($reservations as $reservation): ?>
-        <tr>
-            <td><?php echo $reservation[0]; ?></td>
-            <td><?php echo $reservation[1]; ?></td>
-            <td><?php echo $reservation[2]; ?></td>
-            <td><?php echo $reservation[3]; ?></td>
-            <td><?php echo $reservation[4]; ?></td>
-            <td><?php echo $reservation[5]; ?></td>
-            <td><?php echo $reservation[6]; ?></td>
-            <td><?php echo $reservation[7]; ?></td>
-            <td><?php echo $reservation[8]; ?></td>
-            <td><?php echo $reservation[9]; ?></td>
-            <td><?php echo $reservation[10]; ?></td>
-            <td><?php echo $reservation[11]; ?></td>
-            <td><?php echo $reservation[12]; ?></td>
-            <td><?php echo $reservation[13]; ?></td>
-            <td><?php echo $reservation[14]; ?></td>
-            <td><?php echo $reservation[15]; ?></td>
-            <td><?php echo $reservation[16]; ?></td>
-            <td><?php echo $reservation[17]; ?></td>
-            <td><?php echo $reservation[18]; ?></td>
-            <td><?php echo $reservation[19]; ?></td>
-            <td><?php echo $reservation[20]; ?></td>
-            <td><?php echo $reservation[21]; ?></td>
-            
-        </tr>
+        <?php foreach ($reservations as $reservation) : ?>
+            <tr>
+                <td><?php echo $reservation[0]; ?></td>
+                <td><?php echo $reservation[1]; ?></td>
+                <td><?php echo $reservation[2]; ?></td>
+                <td><?php echo $reservation[3]; ?></td>
+                <td><?php echo $reservation[4]; ?></td>
+                <td><?php echo $reservation[5]; ?></td>
+                <td><?php echo $reservation[6]; ?></td>
+                <td><?php echo $reservation[7]; ?></td>
+                <td><?php echo $reservation[8]; ?></td>
+                <td><?php echo $reservation[9]; ?></td>
+                <td><?php echo $reservation[10]; ?></td>
+                <td><?php echo $reservation[11]; ?></td>
+                <td><?php echo $reservation[12]; ?></td>
+                <td><?php echo $reservation[13]; ?></td>
+                <td><?php echo $reservation[14]; ?></td>
+                <td><?php echo $reservation[15]; ?></td>
+                <td><?php echo $reservation[16]; ?></td>
+                <td><?php echo $reservation[17]; ?></td>
+                <td><?php echo $reservation[18]; ?></td>
+                <td><?php echo $reservation[19]; ?></td>
+                <td><?php echo $reservation[20]; ?></td>
+                <td><?php echo $reservation[21]; ?></td>
+
+            </tr>
         <?php endforeach; ?>
     </table>
     <p><a class="seDeconnecter" href="logout.php">Se déconnecter</a></p>
 </main>
+
 </html>

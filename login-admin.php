@@ -18,11 +18,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin - Connexion</title>
-    <link rel="stylesheet" href="./assets/login.css"/>
+    <link rel="stylesheet" href="./assets/login.css" />
 </head>
 <main>
     <h1>Connexion Admin</h1>
@@ -31,8 +32,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="password" id="password" name="password" required>
         <button type="submit">Connexion</button>
     </form>
-    <?php if (isset($login_err)): ?>
-    <p><?php echo $login_err; ?></p>
+    <?php if (isset($login_err)) : ?>
+        <p><?php echo $login_err; ?></p>
     <?php endif; ?>
 </main>
+
 </html>
